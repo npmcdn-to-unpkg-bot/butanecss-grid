@@ -1,0 +1,21 @@
+{
+  "name": "butane-flex-grid",
+  "version": "0.1.0",
+  "description": "ButaneCSS Flexbox Grid",
+  "keywords": [
+    "flexbox",
+    "grid",
+    "butanecss"
+  ],
+	"devDependencies": {
+    "browser-sync": "^2.10.0",
+    "cssnext": "^1.8.4",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-postcss": "^5.1.10",
+    "gulp-rename": "^1.2.2",
+    "postcss-reporter": "~0.4.0"
+  },
+  "author": "Alex Carpenter",
+  "license": "MIT"
+}

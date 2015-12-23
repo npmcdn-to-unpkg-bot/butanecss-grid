@@ -1,0 +1,77 @@
+/**
+ * BUTANE/WIDTHS UTILITIES
+ *
+ */
+
+.u-w1  { width: var(--width-1) !important; }
+ .u-w2  { width: var(--width-2) !important; }
+ .u-w3  { width: var(--width-3) !important; }
+ .u-w4  { width: var(--width-4) !important; }
+ .u-w5  { width: var(--width-5) !important; }
+ .u-w6  { width: var(--width-6) !important; }
+ .u-w7  { width: var(--width-7) !important; }
+ .u-w8  { width: var(--width-8) !important; }
+ .u-w9  { width: var(--width-9) !important; }
+ .u-w10 { width: var(--width-10) !important; }
+ .u-w11 { width: var(--width-11) !important; }
+ .u-w12 { width: var(--width-12) !important; }
+
+
+/**
+ * Small
+ */
+
+@media (--screen-sm) {
+  .u-w1\@sm  { width: var(--width-1) !important; }
+  .u-w2\@sm  { width: var(--width-2) !important; }
+  .u-w3\@sm  { width: var(--width-3) !important; }
+  .u-w4\@sm  { width: var(--width-4) !important; }
+  .u-w5\@sm  { width: var(--width-5) !important; }
+  .u-w6\@sm  { width: var(--width-6) !important; }
+  .u-w7\@sm  { width: var(--width-7) !important; }
+  .u-w8\@sm  { width: var(--width-8) !important; }
+  .u-w9\@sm  { width: var(--width-9) !important; }
+  .u-w10\@sm { width: var(--width-10) !important; }
+  .u-w11\@sm { width: var(--width-11) !important; }
+  .u-w12\@sm { width: var(--width-12) !important; }
+}
+
+
+/**
+ * Medium
+ */
+
+ @media (--screen-md) {
+   .u-w1\@md  { width: var(--width-1) !important; }
+   .u-w2\@md  { width: var(--width-2) !important; }
+   .u-w3\@md  { width: var(--width-3) !important; }
+   .u-w4\@md  { width: var(--width-4) !important; }
+   .u-w5\@md  { width: var(--width-5) !important; }
+   .u-w6\@md  { width: var(--width-6) !important; }
+   .u-w7\@md  { width: var(--width-7) !important; }
+   .u-w8\@md  { width: var(--width-8) !important; }
+   .u-w9\@md  { width: var(--width-9) !important; }
+   .u-w10\@md { width: var(--width-10) !important; }
+   .u-w11\@md { width: var(--width-11) !important; }
+   .u-w12\@md { width: var(--width-12) !important; }
+ }
+
+
+ /**
+  * Large
+  */
+
+@media (--screen-lg) {
+  .u-w1\@lg  { width: var(--width-1) !important; }
+  .u-w2\@lg  { width: var(--width-2) !important; }
+  .u-w3\@lg  { width: var(--width-3) !important; }
+  .u-w4\@lg  { width: var(--width-4) !important; }
+  .u-w5\@lg  { width: var(--width-5) !important; }
+  .u-w6\@lg  { width: var(--width-6) !important; }
+  .u-w7\@lg  { width: var(--width-7) !important; }
+  .u-w8\@lg  { width: var(--width-8) !important; }
+  .u-w9\@lg  { width: var(--width-9) !important; }
+  .u-w10\@lg { width: var(--width-10) !important; }
+  .u-w11\@lg { width: var(--width-11) !important; }
+  .u-w12\@lg { width: var(--width-12) !important; }
+}

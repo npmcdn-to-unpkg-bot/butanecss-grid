@@ -1,0 +1,23 @@
+/**
+ * BUTANE/SETTINGS
+ *
+ */
+
+:root {
+	/* Grid */
+	--gutter-width: 1rem;
+
+	/* Widths */
+	--width-1:  calc(100% * 1 / 12);
+	--width-2:  calc(100% * 2 / 12);
+	--width-3:  calc(100% * 3 / 12);
+	--width-4:  calc(100% * 4 / 12);
+	--width-5:  calc(100% * 5 / 12);
+	--width-6:  calc(100% * 6 / 12);
+	--width-7:  calc(100% * 7 / 12);
+	--width-8:  calc(100% * 8 / 12);
+	--width-9:  calc(100% * 9 / 12);
+	--width-10: calc(100% * 10 / 12);
+	--width-11: calc(100% * 11 / 12);
+	--width-12: calc(100% * 12 / 12);
+}
