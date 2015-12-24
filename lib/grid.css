@@ -13,7 +13,19 @@
 	box-sizing: border-box;
 }
 
-/*
+/**
+ * Grid item alignments
+ */
+
+.o-grid--center {
+	justify-content: center;
+}
+
+.o-grid--end {
+	justify-content: flex-end;
+}
+
+/**
  * Grid with gutters
  */
 

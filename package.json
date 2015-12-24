@@ -1,7 +1,7 @@
 {
-  "name": "butane-flex-grid",
+  "name": "butane-grid",
   "version": "0.1.0",
-  "description": "ButaneCSS Flexbox Grid",
+  "description": "ButaneCSS Grid",
   "keywords": [
     "flexbox",
     "grid",
