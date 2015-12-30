@@ -17,13 +17,9 @@
  * Grid item alignments
  */
 
-.o-grid--center {
-	justify-content: center;
-}
-
-.o-grid--end {
-	justify-content: flex-end;
-}
+.o-grid--center { justify-content: center; }
+.o-grid--end    { justify-content: flex-end; }
+.o-grid--float  { align-items: center; }
 
 /**
  * Grid with gutters
