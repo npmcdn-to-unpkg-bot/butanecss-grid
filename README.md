@@ -37,5 +37,13 @@ gulp
 - [Twitter](https://twitter.com/hybrid_alex)
 - [Github](https://github.com/alexcarpenter)
 
+## Contributing
+- Navigate to the main page of the repository
+- [Fork it!](https://github.com/ButaneCSS/butanecss-grid#fork-destination-box)
+- Create your feature branch: git checkout -b my-new-feature
+- Commit your changes: git commit -m 'Add some feature'
+- Push to the branch: git push origin my-new-feature
+- Submit a pull request
+
 ## License
 [MIT](https://github.com/ButaneCSS/butane-grid/blob/master/LICENSE)
