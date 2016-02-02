@@ -2,6 +2,8 @@
 
 [![GitHub version](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid.svg)](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid)
 
+[ButaneCSS Grid on CodePen](http://codepen.io/alexcarpenter/pen/QyBrwP?editors=1100)
+
 ## Getting Started
 ```shell
 git clone https://github.com/ButaneCSS/butane-grid.git
