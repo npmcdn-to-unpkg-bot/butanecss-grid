@@ -3,7 +3,7 @@
 [![GitHub version](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid.svg)](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid)
 [![npm version](https://badge.fury.io/js/butanecss-grid.svg)](https://badge.fury.io/js/butanecss-grid)
 
-[ButaneCSS Grid on CodePen](http://codepen.io/alexcarpenter/pen/QyBrwP?editors=1100)
+ButaneCSS Grid on [CodePen](http://codepen.io/alexcarpenter/pen/QyBrwP?editors=1100)
 
 ## Getting Started
 ```shell
