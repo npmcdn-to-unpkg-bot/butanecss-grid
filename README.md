@@ -10,7 +10,7 @@ gulp
 
 ## Usage
 ```html
-<div class="o-grid o-grid--gutters">
+<div class="o-grid">
 	<div class="o-grid__item u-w6@sm">
 		<p>Example grid item text.</p>
 	</div>

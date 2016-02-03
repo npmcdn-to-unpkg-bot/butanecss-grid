@@ -5,9 +5,12 @@
 .o-grid {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 calc(-0.5 * var(--gutter-width)) calc(-2 * var(--gutter-width));
 }
 
 .o-grid__item {
+	margin-bottom: var(--gutter-width);
+	padding: 0 calc(0.5 * var(--gutter-width));
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -21,14 +24,14 @@
 .o-grid--float  { align-items: center; }
 
 /**
- * Grid with gutters
+ * Grid with no gutters
  */
 
-.o-grid--gutters {
-	margin: 0 calc(-0.5 * var(--gutter-width)) calc(-2 * var(--gutter-width));
+.o-grid--flush {
+	margin: 0 !important;
 }
 
-.o-grid--gutters > .o-grid__item {
-	margin-bottom: var(--gutter-width);
-	padding: 0 calc(0.5 * var(--gutter-width));
+.o-grid--flush > .o-grid__item {
+	margin: 0 !important;
+	padding: 0 !important;
 }
