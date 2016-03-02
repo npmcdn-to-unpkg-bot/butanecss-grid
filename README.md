@@ -1,6 +1,7 @@
 # ButaneCSS Grid
 
 [![GitHub version](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid.svg)](https://badge.fury.io/gh/ButaneCSS%2Fbutanecss-grid)
+[![devDependency Status](https://img.shields.io/david/dev/ButaneCSS/butanecss-grid.svg)](https://david-dm.org/ButaneCSS/butanecss-grid#info=devDependencies)
 
 ButaneCSS Grid on [CodePen](http://codepen.io/alexcarpenter/pen/QyBrwP?editors=1100)
 
