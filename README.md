@@ -6,6 +6,10 @@
 ButaneCSS Grid on [CodePen](http://codepen.io/alexcarpenter/pen/QyBrwP?editors=1100)
 
 ## Getting Started
+
+The fastest way to get started is to load ButaneCSS Grid from the CDN: `https://npmcdn.com/butanecss-grid@1.1.0/dist/butanecss-grid.min.css`
+
+or start building the project locally:
 ```shell
 git clone https://github.com/ButaneCSS/butane-grid.git
 cd butane-grid

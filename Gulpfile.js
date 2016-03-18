@@ -12,6 +12,7 @@ var comment = '/*!\n' +
   ' * <%= pkg.description %>\n' +
   ' *\n' +
   ' * Copyright '+new Date().getFullYear()+', <%= pkg.author %>\n' +
+  ' * Licensed under the <%= pkg.license %> license\n'+
   '*/\n\n';
 
 gulp.task('compile', function () {
