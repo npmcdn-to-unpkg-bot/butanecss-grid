@@ -3,7 +3,16 @@ var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('gulp-autoprefixer'),
     rename       = require('gulp-rename'),
+    banner       = require('gulp-banner'),
+    pkg          = require('./package.json'),
     browserSync  = require('browser-sync').create();
+
+var comment = '/*!\n' +
+  ' * <%= pkg.name %> <%= pkg.version %>\n' +
+  ' * <%= pkg.description %>\n' +
+  ' *\n' +
+  ' * Copyright '+new Date().getFullYear()+', <%= pkg.author %>\n' +
+  '*/\n\n';
 
 gulp.task('compile', function () {
   return gulp.src('./index.css')
@@ -16,32 +25,18 @@ gulp.task('compile', function () {
     })
   ]))
   .pipe(autoprefixer({browsers: ['last 2 version']}))
+  .pipe(banner(comment, { pkg: pkg }))
   .pipe(rename({
     basename: 'butanecss-grid',
     suffix: '.min'
   }))
-  .pipe(gulp.dest('./public'))
+  .pipe(gulp.dest('./dist'))
   .pipe(browserSync.stream())
-})
-
-gulp.task('serve', function() {
-  browserSync.init({
-    server: {
-      baseDir: './public'
-    }
-  })
-})
-
-gulp.task('html', function() {
-  return gulp.src('./test/index.html')
-  .pipe(gulp.dest('./public/'))
-  .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
   gulp.watch(['./*.css', './lib/*.css'], ['compile'])
-  gulp.watch('./test/index.html', ['html'])
-})
+});
 
-gulp.task('build', ['compile', 'html']);
-gulp.task('default', ['build', 'serve', 'watch']);
+gulp.task('default', ['watch']);
+gulp.task('build', ['compile']);
