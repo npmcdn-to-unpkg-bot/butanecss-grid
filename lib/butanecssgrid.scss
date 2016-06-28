@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+$gutter-width: 1rem !default;
+$gutter-compensation: calc($gutter-width * -1);
+
+$bg-sm-viewport: 32em !default;
+$bg-md-viewport: 48em !default;
+$bg-lg-viewport: 64em !default;
+
+.grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid--padded {
+  margin-right: if(variable-exists(root-gutter-compensation), $root-gutter-compensation, -1rem) * 0.5;
+  margin-left: if(variable-exists(root-gutter-compensation), $root-gutter-compensation, -1rem) * 0.5;
+}
+
+.grid--padded > .grid__item {
+  padding-right: if(variable-exists(root-gutter-width), $root-gutter-width, 1rem) * 0.5;
+  padding-left: if(variable-exists(root-gutter-width), $root-gutter-width, 1rem) * 0.5;
+}
+
+.grid--reverse {
+  flex-direction: row-reverse;
+}
+
+.grid--top {
+  align-items: flex-start;
+}
+
+.grid--bottom {
+  align-items: flex-end;
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.width-1 { width: calc(100% * 1 / 12); }
+.width-2 { width: calc(100% * 2 / 12); }
+.width-3 { width: calc(100% * 3 / 12); }
+.width-4 { width: calc(100% * 4 / 12); }
+.width-5 { width: calc(100% * 5 / 12); }
+.width-6 { width: calc(100% * 6 / 12); }
+.width-7 { width: calc(100% * 7 / 12); }
+.width-8 { width: calc(100% * 8 / 12); }
+.width-9 { width: calc(100% * 9 / 12); }
+.width-10 { width: calc(100% * 10 / 12); }
+.width-11 { width: calc(100% * 11 / 12); }
+.width-12 { width: calc(100% * 12 / 12); }
+
+@media only screen and (min-width: $bg-sm-viewport) {
+  .width-1\@sm { width: calc(100% * 1 / 12); }
+  .width-2\@sm { width: calc(100% * 2 / 12); }
+  .width-3\@sm { width: calc(100% * 3 / 12); }
+  .width-4\@sm { width: calc(100% * 4 / 12); }
+  .width-5\@sm { width: calc(100% * 5 / 12); }
+  .width-6\@sm { width: calc(100% * 6 / 12); }
+  .width-7\@sm { width: calc(100% * 7 / 12); }
+  .width-8\@sm { width: calc(100% * 8 / 12); }
+  .width-9\@sm { width: calc(100% * 9 / 12); }
+  .width-10\@sm { width: calc(100% * 10 / 12); }
+  .width-11\@sm { width: calc(100% * 11 / 12); }
+  .width-12\@sm { width: calc(100% * 12 / 12); }
+}
+
+@media only screen and (min-width: $bg-md-viewport) {
+  .width-1\@md { width: calc(100% * 1 / 12); }
+  .width-2\@md { width: calc(100% * 2 / 12); }
+  .width-3\@md { width: calc(100% * 3 / 12); }
+  .width-4\@md { width: calc(100% * 4 / 12); }
+  .width-5\@md { width: calc(100% * 5 / 12); }
+  .width-6\@md { width: calc(100% * 6 / 12); }
+  .width-7\@md { width: calc(100% * 7 / 12); }
+  .width-8\@md { width: calc(100% * 8 / 12); }
+  .width-9\@md { width: calc(100% * 9 / 12); }
+  .width-10\@md { width: calc(100% * 10 / 12); }
+  .width-11\@md { width: calc(100% * 11 / 12); }
+  .width-12\@md { width: calc(100% * 12 / 12); }
+}
+
+@media only screen and (min-width: $bg-lg-viewport) {
+  .width-1\@lg { width: calc(100% * 1 / 12); }
+  .width-2\@lg { width: calc(100% * 2 / 12); }
+  .width-3\@lg { width: calc(100% * 3 / 12); }
+  .width-4\@lg { width: calc(100% * 4 / 12); }
+  .width-5\@lg { width: calc(100% * 5 / 12); }
+  .width-6\@lg { width: calc(100% * 6 / 12); }
+  .width-7\@lg { width: calc(100% * 7 / 12); }
+  .width-8\@lg { width: calc(100% * 8 / 12); }
+  .width-9\@lg { width: calc(100% * 9 / 12); }
+  .width-10\@lg { width: calc(100% * 10 / 12); }
+  .width-11\@lg { width: calc(100% * 11 / 12); }
+  .width-12\@lg { width: calc(100% * 12 / 12); }
+}

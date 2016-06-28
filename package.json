@@ -1,22 +1,33 @@
 {
   "name": "butanecss-grid",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "ButaneCSS Grid is a simple lightweight flex based grid system",
+  "author": "Alex Carpenter",
+  "main": "butanecssgrid.css",
+  "homepage": "https://github.com/ButaneCSS/butanecss-grid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ButaneCSS/butanecss-grid.git"
+  },
+  "scripts": {
+    "css": "cssnext --no-rem lib/butanecssgrid.css dist/css/butanecssgrid.css",
+    "scss": "node-sass lib/butanecssgrid.scss dist/scss/butanecssgrid.css",
+    "both": "npm run css && npm run scss",
+    "copy": "cp lib/butanecssgrid.css example/css/butanecssgrid.css",
+    "example:css": "npm run copy && cssnext --no-rem example/css/main.css example/main.css",
+    "deploy": "gh-pages -d example"
+  },
   "keywords": [
     "flexbox",
     "grid",
     "butanecss"
   ],
   "devDependencies": {
-    "browser-sync": "^2.10.0",
+    "autoprefixer": "^6.3.6",
+    "cssnano-cli": "^1.0.4",
     "cssnext": "^1.8.4",
-    "gulp": "~3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-banner": "^0.1.3",
-    "gulp-postcss": "^6.1.0",
-    "gulp-rename": "^1.2.2",
-    "postcss-reporter": "^1.3.3"
-  },
-  "author": "Alex Carpenter",
-  "license": "MIT"
+    "gh-pages": "^0.11.0",
+    "node-sass": "^3.8.0"
+  }
 }
